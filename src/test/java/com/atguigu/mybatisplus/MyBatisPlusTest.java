@@ -14,11 +14,11 @@ import java.util.List;
 import java.util.Map;
 
 @SpringBootTest
-public class MyBatisPlusTest {
-@Autowired
-    private UserMapper userMapper;
- @Test
-    public void testSelectList(){
+ public class MyBatisPlusTest {
+     @Autowired
+     private UserMapper userMapper;
+     @Test
+     public void testSelectList(){
 
      List<User> list = userMapper.selectList(null);
      list.forEach(System.out::println);
@@ -78,11 +78,12 @@ map.put("age",20);
   List<User> users = userMapper.selectByMap(map);
   users.forEach(System.out::println);
 */
-/*
   List<User> users = userMapper.selectList(null);
-  users.forEach(System.out::println);*/
-     Map<String, Object> map = userMapper.selectMapById(1L);
+  users.forEach(System.out::println);
+/*
+     Map<String, Object> map = userMapper.selectMapById(4L);
      System.out.println(map);
+*/
 
  }
 
