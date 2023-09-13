@@ -15,3 +15,4 @@ mybatis-plus:
     db-config:
       table-prefix: t_
       id-type: auto
+  type-aliases-package: com.atguigu.mybatisplus.pojo

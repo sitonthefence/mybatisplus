@@ -14,4 +14,9 @@
 
 </select>
 
+     <select id="selectPageVo" resultType="User">
+    select id,name,age,email from t_user where age> #{age}
+
+     </select>
+
 </mapper>
