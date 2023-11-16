@@ -12,9 +12,9 @@ import java.util.Map;
 public interface UserMapper extends BaseMapper<User> {
 
 
-   Map<String,Object> selectMapById(Long id);
+      Map<String,Object> selectMapById(Long id);
 
-   Page<User> selectPageVo(@Param("page") Page<User>page, @Param("age") Integer age);
+//   Page<User> selectPageVo(@Param("page") Page<User>page, @Param("age") Integer age);
 
 
 }

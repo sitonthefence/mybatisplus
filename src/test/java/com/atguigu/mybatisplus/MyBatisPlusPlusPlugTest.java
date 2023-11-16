@@ -28,7 +28,7 @@ public class MyBatisPlusPlusPlugTest {
         System.out.println(page.hasNext());
         System.out.println(page.hasPrevious());
     }
-    @Test
+  /*  @Test
     public void testPageVo(){
         Page<User> page=new Page<>(1,3);
         userMapper.selectPageVo(page,20);
@@ -37,7 +37,7 @@ public class MyBatisPlusPlusPlugTest {
         System.out.println(page.getTotal());
         System.out.println(page.hasNext());
         System.out.println(page.hasPrevious());
-    }
+    }*/
     @Test
     public void testProduct01(){
         Product productLi = productMapper.selectById(1);

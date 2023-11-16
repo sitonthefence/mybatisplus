@@ -39,7 +39,7 @@ import java.util.Map;
  }
  @Test
     public void testDelete(){
-/*     int result = userMapper.deleteById(1700859150474551298L);
+/*  int result = userMapper.deleteById(1724071235073216514L);
      System.out.println("result:"+result);*/
 
 /*  Map<String,Object> map=new HashMap<>();
@@ -65,11 +65,14 @@ import java.util.Map;
  @Test
  public  void  testSelect(){
 
-/*  User user=userMapper.selectById(1L);
-  System.out.println(user);*/
-/*  List<Long> list = Arrays.asList(1L, 2L, 3L);
+  User user=userMapper.selectById(1L);
+  System.out.println(user);
+     System.out.println("------------------------------------------------------------------------");
+  List<Long> list = Arrays.asList(1L, 2L, 3L);
   List<User> users = userMapper.selectBatchIds(list);
-  users.forEach(System.out::println);*/
+  users.forEach(System.out::println);
+     System.out.println("------------------------------------------------------------------------");
+
 /*
   Map<String,Object>map=new HashMap<>();
   map.put("name","jack");
@@ -78,12 +81,13 @@ map.put("age",20);
   List<User> users = userMapper.selectByMap(map);
   users.forEach(System.out::println);
 */
-  List<User> users = userMapper.selectList(null);
+     System.out.println("------------------------------------------------------------------------");
+  List<User> allUsers = userMapper.selectList(null);
   users.forEach(System.out::println);
-/*
+     System.out.println("hahha------------------------------------------------------------------------");
+
      Map<String, Object> map = userMapper.selectMapById(4L);
      System.out.println(map);
-*/
 
  }
 

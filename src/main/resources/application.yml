@@ -7,7 +7,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://saic01.top:7004/mybatis_plus?characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
     username: root
-    password: 123456
+    password: Seethrough361
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
